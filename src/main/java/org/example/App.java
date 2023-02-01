@@ -10,7 +10,7 @@ public class App
 
         Animal animal=new Animal();
 
-        animal.name= "Flyffy";
+        animal.name= "Fluffy";
         animal.age=3;
         animal.favouriteActivity="walking";
         animal.favouriteFood= "Pedigree";
@@ -24,15 +24,15 @@ public class App
 
         Doctor doctor1=new Doctor();
         doctor1.name="Joe";
-        doctor1.speciality="Vetenerian"
+        doctor1.speciality="Veterinary";
 
         Doctor student = new Doctor();
         student.name= "Angie";
-        student.speciality="vetenerian student";
+        student.speciality="Veterinary student";
 
-        Adaptor persone= new Adaptor();
-        persone.name= "Carol";
-        persone.money=5000;
+        Adaptor person= new Adaptor();
+        person.name= "Carol";
+        person.money=5000;
 
         AnimalFood food= new AnimalFood();
         food.availability=true;
@@ -42,7 +42,7 @@ public class App
         food.expireDate.toLocalDate();
 
         Game game= new Game();
-        game.owner= persone.name;
+        game.owner= person.name;
         game.doctor= doctor1.name;
         game.dog=animal.name;
 
