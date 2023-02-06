@@ -8,38 +8,27 @@ public class App
     public static void main( String[] args )
     {
 
-        Animal animal=new Animal();
+        Animal animal=new Animal("Fluffy",5,5,5,5,"Pedigree","walking");
 
-        animal.name= "Fluffy";
-        animal.age=3;
-        animal.favouriteActivity="walking";
-        animal.favouriteFood= "Pedigree";
-        animal.health=5;
-        animal.hunger=5;
-        animal.happiness=5;
+       Activity activity= new Activity("waling");
 
-        Activity activity= new Activity();
 
-        activity.name="walking";
 
-        Doctor doctor1=new Doctor();
-        doctor1.name="Joe";
-        doctor1.speciality="Veterinary";
+        Doctor doctor1=new Doctor("Joe","Veterinary");
 
-        Doctor student = new Doctor();
-        student.name= "Angie";
-        student.speciality="Veterinary student";
+
+        Doctor student = new Doctor("Angie","Veterinary student");
+
 
         Adaptor person= new Adaptor();
         person.name= "Carol";
         person.money=5000;
 
-        AnimalFood food= new AnimalFood();
-        food.availability=true;
-        food.name="Pedigree";
-        food.price=50;
-        food.quantity= 1;
-        food.expireDate.toLocalDate();
+        Calendar d = Calendar.getInstance();
+        d.set(2023,02,25);
+
+        AnimalFood food= new AnimalFood("Pedigree",25,1,d);
+        food.expireDate= d;
 
         Game game= new Game();
         game.owner= person.name;
