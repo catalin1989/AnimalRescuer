@@ -12,6 +12,8 @@ public class App
 
        Activity activity= new Activity("walked");
 
+       Activity activity1= new Activity("talked");
+
         Doctor doctor1=new Doctor("Joe","Veterinary");
 
         Doctor student = new Doctor("Angie","Veterinary student");
@@ -27,6 +29,8 @@ public class App
 
         AnimalFood food= new AnimalFood("Pedigree",25,1,d);
         food.expireDate= d;
+
+        AnimalFood food1= new AnimalFood("Wiskas",20,1,d);
 
         Game game= new Game();
         game.owner= person.name;

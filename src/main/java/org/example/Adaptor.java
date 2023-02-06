@@ -8,14 +8,20 @@ public class Adaptor {
 
     public void feed(Animal animal,AnimalFood food){
 
+        if (food.name=="Pedigree"){
+            animal.happiness++;
+        }
         System.out.println(name+" feed "+animal.name+" with "+food.name);
-        animal.hunger=0;
+        animal.hunger--;
     }
 
     public void activity1(Activity activity, Animal animal ){
 
+        if(activity.name=="walked"){
+            animal.happiness++;
+        }
         System.out.println(name+" has "+activity.name+" "+animal.name);
-        animal.happiness=10;
+        animal.happiness++;
     }
 
 }
